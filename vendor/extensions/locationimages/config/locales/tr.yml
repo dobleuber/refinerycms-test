@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      locationimages:
+        title: Locationimages
+    locationimages:
+      admin:
+        locationimages:
+          actions:
+            create_new: Yeni Ekle Locationimage
+            reorder: Tekrar sirala Locationimages
+            reorder_done: Tekrar siralama tamamlandiLocationimages
+          records:
+            title: Locationimages
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Locationimages yok henuz.  Tikla "Yeni Ekle Locationimage" eklemek senin ilk locationimage.
+          locationimage:
+            view_live_html: Bunu canlu locationimage goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle locationimage
+            delete: Bunu Sil locationimage sonsuza dek
+      locationimages:
+        show:
+          other: Diger Locationimages
+  activerecord:
+    attributes:
+      'refinery/locationimages/locationimage':
+        title: Title
+        photo: Photo

@@ -1,0 +1,40 @@
+tr:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Yeni Ekle Location
+            reorder: Tekrar sirala Locations
+            reorder_done: Tekrar siralama tamamlandiLocations
+          records:
+            title: Locations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Locations yok henuz.  Tikla "Yeni Ekle Location" eklemek senin ilk location.
+          location:
+            view_live_html: Bunu canlu location goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle location
+            delete: Bunu Sil location sonsuza dek
+      locations:
+        show:
+          other: Diger Locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        picture: Picture
+        country: Country
+        state: State
+        city: City
+        address: Address
+        zip: Zip
+        hours: Hours
+        telephone: Telephone
+        fax: Fax
+        email: Email
+        directionslink: Directionslink
+        about: About

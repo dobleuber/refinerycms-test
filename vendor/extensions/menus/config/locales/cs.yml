@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      menus:
+        title: Menus
+    menus:
+      admin:
+        menus:
+          actions:
+            create_new: Přidat Menu
+            reorder: Řadit Menus
+            reorder_done: Konec řazení Menus
+          records:
+            title: Menus
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Menus. Zvolte "Přidat Menu" pro přidání prvního menu.
+          menu:
+            view_live_html: Zobrazit náhled menu<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit menu
+            delete: Smazat menu
+      menus:
+        show:
+          other: Další Menus
+  activerecord:
+    attributes:
+      'refinery/menus/menu':
+        title: Title
+        description: Description
+        photo: Photo

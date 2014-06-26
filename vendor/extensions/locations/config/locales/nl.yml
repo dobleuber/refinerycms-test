@@ -1,0 +1,40 @@
+nl:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Nieuwe Location toevoegen
+            reorder: De volgorde van de Locations wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Location-volgorde
+          records:
+            title: Locations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Locations. Druk op 'Nieuwe Location toevoegen' om de eerste toe te voegen.
+          location:
+            view_live_html: Deze location op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze location
+            delete: Deze location definitief verwijderen
+      locations:
+        show:
+          other: Andere Locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        picture: Picture
+        country: Country
+        state: State
+        city: City
+        address: Address
+        zip: Zip
+        hours: Hours
+        telephone: Telephone
+        fax: Fax
+        email: Email
+        directionslink: Directionslink
+        about: About

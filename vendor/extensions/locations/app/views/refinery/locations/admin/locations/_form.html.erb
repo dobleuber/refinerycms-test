@@ -1,0 +1,89 @@
+<%= form_for [refinery, :locations_admin, @location] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @location,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description, :about],
+                :object => "locations/location" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :picture -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :picture_id,
+               :image => @location.picture,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :country -%>
+    <%= f.text_field :country -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :state -%>
+    <%= f.text_field :state -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :city -%>
+    <%= f.text_field :city -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :address -%>
+    <%= f.text_field :address -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :zip -%>
+    <%= f.text_field :zip -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :hours -%>
+    <%= f.text_field :hours -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :telephone -%>
+    <%= f.text_field :telephone -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :fax -%>
+    <%= f.text_field :fax -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :directionslink -%>
+    <%= f.text_field :directionslink -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.locations.admin.locations.location'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @location.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

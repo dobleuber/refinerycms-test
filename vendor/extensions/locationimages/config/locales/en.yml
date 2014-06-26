@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      locationimages:
+        title: Locationimages
+    locationimages:
+      admin:
+        locationimages:
+          actions:
+            create_new: Add New Locationimage
+            reorder: Reorder Locationimages
+            reorder_done: Done Reordering Locationimages
+          records:
+            title: Locationimages
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Locationimages yet. Click "Add New Locationimage" to add your first locationimage.
+          locationimage:
+            view_live_html: View this locationimage live <br/><em>(opens in a new window)</em>
+            edit: Edit this locationimage
+            delete: Remove this locationimage forever
+      locationimages:
+        show:
+          other: Other Locationimages
+  activerecord:
+    attributes:
+      'refinery/locationimages/locationimage':
+        title: Title
+        photo: Photo

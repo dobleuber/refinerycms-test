@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      locationimages:
+        title: Locationimages
+#        article: masculino/femenino
+    locationimages:
+      admin:
+        locationimages:
+          actions:
+            create_new: Crear nuevo locationimage
+            reorder: Reordenar locationimages
+            reorder_done: Reordenación de locationimages completada
+          records:
+            title: Locationimages
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay locationimages todavía. Pulsa en "Crear nuevo Locationimage" para crear tu primer locationimage.
+          locationimage:
+            view_live_html: Ver este locationimage como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este locationimage
+            delete: Borrar este locationimage para siempre
+      locationimages:
+        show:
+          other: Otros locationimages
+  activerecord:
+    attributes:
+      'refinery/locationimages/locationimage':
+        title: Title
+        photo: Photo

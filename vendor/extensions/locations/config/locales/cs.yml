@@ -1,0 +1,40 @@
+cs:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Přidat Location
+            reorder: Řadit Locations
+            reorder_done: Konec řazení Locations
+          records:
+            title: Locations
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Locations. Zvolte "Přidat Location" pro přidání prvního location.
+          location:
+            view_live_html: Zobrazit náhled location<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit location
+            delete: Smazat location
+      locations:
+        show:
+          other: Další Locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        picture: Picture
+        country: Country
+        state: State
+        city: City
+        address: Address
+        zip: Zip
+        hours: Hours
+        telephone: Telephone
+        fax: Fax
+        email: Email
+        directionslink: Directionslink
+        about: About

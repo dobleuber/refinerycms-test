@@ -1,0 +1,76 @@
+nl:
+  refinery:
+    plugins:
+      event_types:
+        title: Event Types
+      places:
+        title: Places
+      events:
+        title: Events
+    events:
+      admin:
+        event_types:
+          actions:
+            create_new: Nieuwe Event Type toevoegen
+            reorder: De volgorde van de Event Types wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Event Type-volgorde
+          records:
+            title: Event Types
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Event Types. Druk op 'Nieuwe Event Type
+              toevoegen' om de eerste toe te voegen.
+          event_type:
+            view_live_html: Deze event type op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze event type
+            delete: Deze event type definitief verwijderen
+        places:
+          actions:
+            create_new: Nieuwe Place toevoegen
+            reorder: De volgorde van de Places wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Place-volgorde
+          records:
+            title: Places
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Places. Druk op 'Nieuwe Place toevoegen'
+              om de eerste toe te voegen.
+          place:
+            view_live_html: Deze place op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
+            edit: Bewerk deze place
+            delete: Deze place definitief verwijderen
+        events:
+          actions:
+            create_new: Nieuwe Event toevoegen
+            reorder: De volgorde van de Events wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Event-volgorde
+          records:
+            title: Events
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Events. Druk op 'Nieuwe Event toevoegen'
+              om de eerste toe te voegen.
+          event:
+            view_live_html: Deze event op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
+            edit: Bewerk deze event
+            delete: Deze event definitief verwijderen
+      event_types:
+        show:
+          other: Andere Event Types
+      places:
+        show:
+          other: Andere Places
+      events:
+        show:
+          other: Andere Events
+  activerecord:
+    attributes:
+      refinery/events/event_type:
+        name: Name
+      refinery/events/place:
+        name: Name
+      refinery/events/event:
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

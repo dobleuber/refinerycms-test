@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Locationimages::Admin::LocationimagesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.locationimages_admin_locationimages_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_locationimages_admin_locationimage_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Locationimages::Admin::LocationimagesController.sortable? && ::Refinery::Locationimages::Locationimage.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Locationimages"),
+                 refinery.locationimages_admin_locationimages_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Locationimages"),
+                 refinery.locationimages_admin_locationimages_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

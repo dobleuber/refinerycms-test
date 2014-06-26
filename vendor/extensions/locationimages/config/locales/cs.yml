@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      locationimages:
+        title: Locationimages
+    locationimages:
+      admin:
+        locationimages:
+          actions:
+            create_new: Přidat Locationimage
+            reorder: Řadit Locationimages
+            reorder_done: Konec řazení Locationimages
+          records:
+            title: Locationimages
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Locationimages. Zvolte "Přidat Locationimage" pro přidání prvního locationimage.
+          locationimage:
+            view_live_html: Zobrazit náhled locationimage<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit locationimage
+            delete: Smazat locationimage
+      locationimages:
+        show:
+          other: Další Locationimages
+  activerecord:
+    attributes:
+      'refinery/locationimages/locationimage':
+        title: Title
+        photo: Photo

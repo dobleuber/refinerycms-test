@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      menus:
+        title: Menus
+    menus:
+      admin:
+        menus:
+          actions:
+            create_new: Nieuwe Menu toevoegen
+            reorder: De volgorde van de Menus wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Menu-volgorde
+          records:
+            title: Menus
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Menus. Druk op 'Nieuwe Menu toevoegen' om de eerste toe te voegen.
+          menu:
+            view_live_html: Deze menu op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze menu
+            delete: Deze menu definitief verwijderen
+      menus:
+        show:
+          other: Andere Menus
+  activerecord:
+    attributes:
+      'refinery/menus/menu':
+        title: Title
+        description: Description
+        photo: Photo

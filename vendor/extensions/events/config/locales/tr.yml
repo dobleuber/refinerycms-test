@@ -1,0 +1,76 @@
+tr:
+  refinery:
+    plugins:
+      event_types:
+        title: Event Types
+      places:
+        title: Places
+      events:
+        title: Events
+    events:
+      admin:
+        event_types:
+          actions:
+            create_new: Yeni Ekle Event Type
+            reorder: Tekrar sirala Event Types
+            reorder_done: Tekrar siralama tamamlandiEvent Types
+          records:
+            title: Event Types
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Event Types yok henuz.  Tikla "Yeni Ekle Event
+              Type" eklemek senin ilk event type.
+          event_type:
+            view_live_html: Bunu canlu event type goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle event type
+            delete: Bunu Sil event type sonsuza dek
+        places:
+          actions:
+            create_new: Yeni Ekle Place
+            reorder: Tekrar sirala Places
+            reorder_done: Tekrar siralama tamamlandiPlaces
+          records:
+            title: Places
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Places yok henuz.  Tikla "Yeni Ekle Place"
+              eklemek senin ilk place.
+          place:
+            view_live_html: Bunu canlu place goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle place
+            delete: Bunu Sil place sonsuza dek
+        events:
+          actions:
+            create_new: Yeni Ekle Event
+            reorder: Tekrar sirala Events
+            reorder_done: Tekrar siralama tamamlandiEvents
+          records:
+            title: Events
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Events yok henuz.  Tikla "Yeni Ekle Event"
+              eklemek senin ilk event.
+          event:
+            view_live_html: Bunu canlu event goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle event
+            delete: Bunu Sil event sonsuza dek
+      event_types:
+        show:
+          other: Diger Event Types
+      places:
+        show:
+          other: Diger Places
+      events:
+        show:
+          other: Diger Events
+  activerecord:
+    attributes:
+      refinery/events/event_type:
+        name: Name
+      refinery/events/place:
+        name: Name
+      refinery/events/event:
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

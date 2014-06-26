@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      locationimages:
+        title: Locationimages
+    locationimages:
+      admin:
+        locationimages:
+          actions:
+            create_new: 建立新的 Locationimage
+            reorder: 对 Locationimages 重新排序
+            reorder_done: 对 Locationimages 的重新排序结束
+          records:
+            title: Locationimages
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Locationimages yet. Click "Add New Locationimage" to add your first locationimage.
+            no_items_yet: 目前没有 Locationimages . 点击 "Add New Locationimage" 创建一个locationimage.
+          locationimage:
+            view_live_html: 查看 locationimage 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 locationimage
+            delete: 永久删除 locationimage
+      locationimages:
+        show:
+          other: 其他 Locationimages
+  activerecord:
+    attributes:
+      'refinery/locationimages/locationimage':
+        title: Title
+        photo: Photo

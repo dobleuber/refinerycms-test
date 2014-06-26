@@ -1,0 +1,76 @@
+nb:
+  refinery:
+    plugins:
+      event_types:
+        title: Event Types
+      places:
+        title: Places
+      events:
+        title: Events
+    events:
+      admin:
+        event_types:
+          actions:
+            create_new: Lag en ny Event Type
+            reorder: Endre rekkefølgen på Event Types
+            reorder_done: Ferdig å endre rekkefølgen Event Types
+          records:
+            title: Event Types
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Event Types enda. Klikk på "Lag en ny Event
+              Type" for å legge til din første event type.
+          event_type:
+            view_live_html: Vis hvordan denne event type ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne event type
+            delete: Fjern denne event type permanent
+        places:
+          actions:
+            create_new: Lag en ny Place
+            reorder: Endre rekkefølgen på Places
+            reorder_done: Ferdig å endre rekkefølgen Places
+          records:
+            title: Places
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Places enda. Klikk på "Lag en ny Place" for
+              å legge til din første place.
+          place:
+            view_live_html: Vis hvordan denne place ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne place
+            delete: Fjern denne place permanent
+        events:
+          actions:
+            create_new: Lag en ny Event
+            reorder: Endre rekkefølgen på Events
+            reorder_done: Ferdig å endre rekkefølgen Events
+          records:
+            title: Events
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Events enda. Klikk på "Lag en ny Event" for
+              å legge til din første event.
+          event:
+            view_live_html: Vis hvordan denne event ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne event
+            delete: Fjern denne event permanent
+      event_types:
+        show:
+          other: Andre Event Types
+      places:
+        show:
+          other: Andre Places
+      events:
+        show:
+          other: Andre Events
+  activerecord:
+    attributes:
+      refinery/events/event_type:
+        name: Name
+      refinery/events/place:
+        name: Name
+      refinery/events/event:
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

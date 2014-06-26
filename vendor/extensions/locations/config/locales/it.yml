@@ -1,0 +1,40 @@
+it:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Aggiungi Nuovo Location
+            reorder: Riordina Locations
+            reorder_done: Termina il Riordino di Locations
+          records:
+            title: Locations
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Locations. Clicca "Aggiungi Nuovo Location" per aggiungere il tuo primo location.
+          location:
+            view_live_html: Guarda live questo location <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo location
+            delete: Rimuovi per sempre questo location
+      locations:
+        show:
+          other: Altri Locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        picture: Picture
+        country: Country
+        state: State
+        city: City
+        address: Address
+        zip: Zip
+        hours: Hours
+        telephone: Telephone
+        fax: Fax
+        email: Email
+        directionslink: Directionslink
+        about: About

@@ -1,0 +1,74 @@
+it:
+  refinery:
+    plugins:
+      event_types:
+        title: Event Types
+      places:
+        title: Places
+      events:
+        title: Events
+    events:
+      admin:
+        event_types:
+          actions:
+            create_new: Aggiungi Nuovo Event Type
+            reorder: Riordina Event Types
+            reorder_done: Termina il Riordino di Event Types
+          records:
+            title: Event Types
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Event Types. Clicca "Aggiungi Nuovo Event
+              Type" per aggiungere il tuo primo event type.
+          event_type:
+            view_live_html: Guarda live questo event type <br/><em>(apre una nuova
+              finestra)</em>
+            edit: Modifica questo event type
+            delete: Rimuovi per sempre questo event type
+        places:
+          actions:
+            create_new: Aggiungi Nuovo Place
+            reorder: Riordina Places
+            reorder_done: Termina il Riordino di Places
+          records:
+            title: Places
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Places. Clicca "Aggiungi Nuovo Place"
+              per aggiungere il tuo primo place.
+          place:
+            view_live_html: Guarda live questo place <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo place
+            delete: Rimuovi per sempre questo place
+        events:
+          actions:
+            create_new: Aggiungi Nuovo Event
+            reorder: Riordina Events
+            reorder_done: Termina il Riordino di Events
+          records:
+            title: Events
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Events. Clicca "Aggiungi Nuovo Event"
+              per aggiungere il tuo primo event.
+          event:
+            view_live_html: Guarda live questo event <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo event
+            delete: Rimuovi per sempre questo event
+      event_types:
+        show:
+          other: Altri Event Types
+      places:
+        show:
+          other: Altri Places
+      events:
+        show:
+          other: Altri Events
+  activerecord:
+    attributes:
+      refinery/events/event_type:
+        name: Name
+      refinery/events/place:
+        name: Name
+      refinery/events/event:
+        title: Title
+        date: Date
+        photo: Photo
+        blurb: Blurb

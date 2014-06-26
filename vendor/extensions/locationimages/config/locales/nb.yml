@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      locationimages:
+        title: Locationimages
+    locationimages:
+      admin:
+        locationimages:
+          actions:
+            create_new: Lag en ny Locationimage
+            reorder: Endre rekkefølgen på Locationimages
+            reorder_done: Ferdig å endre rekkefølgen Locationimages
+          records:
+            title: Locationimages
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Locationimages enda. Klikk på "Lag en ny Locationimage" for å legge til din første locationimage.
+          locationimage:
+            view_live_html: Vis hvordan denne locationimage ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne locationimage
+            delete: Fjern denne locationimage permanent
+      locationimages:
+        show:
+          other: Andre Locationimages
+  activerecord:
+    attributes:
+      'refinery/locationimages/locationimage':
+        title: Title
+        photo: Photo

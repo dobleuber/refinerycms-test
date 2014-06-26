@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      menus:
+        title: Menus
+    menus:
+      admin:
+        menus:
+          actions:
+            create_new: Yeni Ekle Menu
+            reorder: Tekrar sirala Menus
+            reorder_done: Tekrar siralama tamamlandiMenus
+          records:
+            title: Menus
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Menus yok henuz.  Tikla "Yeni Ekle Menu" eklemek senin ilk menu.
+          menu:
+            view_live_html: Bunu canlu menu goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle menu
+            delete: Bunu Sil menu sonsuza dek
+      menus:
+        show:
+          other: Diger Menus
+  activerecord:
+    attributes:
+      'refinery/menus/menu':
+        title: Title
+        description: Description
+        photo: Photo

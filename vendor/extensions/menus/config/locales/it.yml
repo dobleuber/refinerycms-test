@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      menus:
+        title: Menus
+    menus:
+      admin:
+        menus:
+          actions:
+            create_new: Aggiungi Nuovo Menu
+            reorder: Riordina Menus
+            reorder_done: Termina il Riordino di Menus
+          records:
+            title: Menus
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Menus. Clicca "Aggiungi Nuovo Menu" per aggiungere il tuo primo menu.
+          menu:
+            view_live_html: Guarda live questo menu <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo menu
+            delete: Rimuovi per sempre questo menu
+      menus:
+        show:
+          other: Altri Menus
+  activerecord:
+    attributes:
+      'refinery/menus/menu':
+        title: Title
+        description: Description
+        photo: Photo
