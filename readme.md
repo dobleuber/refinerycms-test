@@ -51,10 +51,3 @@ If you prefer to use rackspace, you can create your account at http://www.racksp
 
 Refinery Cms Backend
 ====
-
-You can access to the refinery administrator at http://localhost:3000/refinery/
-The default user is:
-
-email: nativefoodsapp@staunchrobots.com
-
-password: corellian
